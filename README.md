@@ -5,7 +5,8 @@ A simple benchmark to test how quickly a lambda function on AWS can start.
 AWS Lambda _might_ reuse a container on repeat invocations, this will test how quickly it starts the first time.
 As this benchmark specifically tests cold start performance it creates multiple separate lambdas rather than invoking the same one again. This way we get an idea of what a cold start looks like. 
 
-Results (March 2, 2016):
+## Results (March 2, 2016):
+
 ![avg 1137ms](results.png)
 
 ## Running the benchmark
