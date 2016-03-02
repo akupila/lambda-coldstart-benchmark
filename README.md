@@ -47,6 +47,7 @@ _Skip this step if you already have an IAM role for lambda_
 ### Run benchmark
 
 ```
+npm install
 npm start -s
 ```
 
