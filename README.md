@@ -13,7 +13,8 @@ Results (March 2, 2016):
 ### Clone the git repo
 
 ```
-git clone ...
+git clone git@github.com:akupila/lambda-coldstart-benchmark.git
+cd lambda-coldstart-benchmark
 ```
 
 ### Create AWS.json
