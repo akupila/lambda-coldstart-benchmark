@@ -1,0 +1,31 @@
+{
+  "name": "lambda-coldstart-benchmark",
+  "version": "1.0.0",
+  "description": "Tests how quickly a lambda function executes from cold start",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run setup && npm run benchmark && npm run cleanup",
+    "repeat": "npm run setup && npm run benchmark && npm run benchmark && npm run cleanup",
+    "setup": "node setup.js",
+    "benchmark": "node benchmark.js",
+    "cleanup": "node cleanup.js"
+  },
+  "keywords": [
+    "aws",
+    "lambda",
+    "benchmark",
+    "coldstart",
+    "test"
+  ],
+  "author": "Antti Kupila <akupila@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "adm-zip": "^0.4.7",
+    "async": "^1.5.2",
+    "aws-sdk": "^2.2.40",
+    "cli-table": "^0.3.1",
+    "colors": "^1.1.2",
+    "lodash": "^4.6.0"
+  }
+}
