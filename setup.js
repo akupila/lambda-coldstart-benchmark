@@ -24,7 +24,7 @@ const createLambda = index => new Promise((resolve, reject) => {
     Timeout: config.timeout,
     MemorySize: config.memory,
     Code: { ZipFile: zipBuffer },
-    Runtime: 'nodejs'
+    Runtime: 'nodejs4.3'
   }, (err, res) => {
     if (err) {
       return reject(err);
